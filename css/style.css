@@ -1,0 +1,336 @@
+/*Margen*/
+* {
+	margin: 0;
+}
+
+.tituloFooter{
+	color: black;
+}
+.mainHeader {
+  /*color de header*/
+	background: #F0FFF0;
+	height: 80px;
+   /*tipo de letra menu*/
+   font-family: 'Amaranth', sans-serif;
+}	
+.main{
+	background-color: #66CDAA;
+}
+.mainHeader a {
+	/*color letras menu*/
+	color: #1A535C;
+	}
+
+/*
+ * Logo
+ */
+.logoHeader {
+	float: left;
+	padding: 15px 0px 0px 20px;
+	text-decoration: none;
+    width: 50px;
+}
+.logoHeader:hover {
+  
+		color: #FFE4C4;
+	}
+	
+.logoHeader .siteName {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+        width: 50px;
+        height: 50px;
+	}
+	
+.logoHeader .siteDesc {
+	display: block;
+	font-weight: 600;
+	font-size: 2rem;
+	/*color letras sitio*/
+	/*color anterior: #2F4F4F */
+	color: #F7FFF7;
+    width: 400px; 
+    /*padding: 10px 10px 10px 150px;*/
+	/*posicion nombre sitio*/
+	padding: 5px 10px 0px 10px;
+    /*tipo de letra nombre sitio*/
+    font-family: 'Amaranth', sans-serif;
+	}
+
+/**************************
+ Menu con Submenu ********/
+/*Estilos para el submenu*/
+/* Uso de flexbox para menú */
+/**************************************************************************************/
+.estiloSubtitulos{
+	color: #FF6B6B;
+	font-family: 'Amaranth', sans-serif;
+	padding: 10px;
+}
+footer{
+	background-color: #F0FFF0;
+	
+}
+.h3{
+	color: #F7FFF7;
+	font-family: 'Amaranth', sans-serif;
+}
+.h4{
+	font-family: 'Roboto', sans-serif;
+	color: #F7FFF7;
+}
+
+/*Estilos para Imagen del index*/
+.estiloImgPpal{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-image: url(https://www.mundoagro.cl/wp-content/uploads/2018/04/viveros-1.jpeg);
+	background-repeat: repeat;
+    background-position: center top;
+    /* background-size: 100%; */
+	/* height: 380px;
+	width: 100%; */
+	
+}
+.estiloImgPpal p{
+	color: #FEEA76;
+	border-style: solid;
+	border-color: yellow;
+	margin: 20px;
+	text-align: center;
+	text-shadow:2px 2px 5px black;
+	padding: 90px;
+	font-family: 'Josefin Slab', serif;
+	width: 200px;
+	height: 100px;
+}
+.textoConFlex{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+
+}
+
+/*Estilo a la tabla*/
+table{
+	border-collapse: collapse;
+	border: 3px solid #2F4F4F;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 50px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+th, td {
+	padding: 20px;
+  }
+thead{
+	background: url(https://static.vecteezy.com/system/resources/previews/000/056/827/non_2x/spring-leaves-vector-background.jpg);
+	color: #2F4F4F;
+  	text-align: center;
+	font-weight: bold;
+}
+tbody{
+	text-align: left;
+	background-color:#F0FFF0;
+}
+
+/*Desafio 4*/
+.cursiva{
+    font-style: italic;
+}
+.mayuscula{
+	text-transform: uppercase;
+}
+
+.videoServicios{
+	padding: 10px 0px 10px 0px;
+}
+
+.textos{
+	font-family: 'Josefin Sans', sans-serif;
+	text-align:justify;
+	padding: 20px;
+}
+
+/*Desafio 5: Box modeling: se añadió estilo para las cajas uno y dos, y se agrego un submenú para servicios*/
+/*Desafio 6: flexbox*/
+.cajaUno{
+	display: flex;
+}
+
+.cajaUno p{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #FEEA76;
+	padding: 10px 10px;
+	border-style: outset;
+	margin: 50px 50px;
+	
+}
+
+.cajaDos p{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #FEEA76;
+	padding: 50px 50px;
+	border-style: outset;
+	margin: 50px;
+	
+}
+
+/* GRID */
+/* .gridExplicito {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 3fr;
+}
+#explicito {
+    height: 50vh;
+} */
+.divServicios{
+	background-color: #FEEA76;
+    margin: 5px;
+    border: solid 1px black;
+	padding: 50px 50px;	
+}
+
+/* #repetitivo {
+    height: 100vh;
+}
+.gridRepetitivo {
+    display: grid;
+    grid-template-columns: 3fr repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 2fr);
+} */
+.divProyecto{
+	background-color: #FEEA76;
+    margin: 5px;
+    border: solid 1px black;
+	padding: 50px 50px;	
+}
+
+/* GRID POR AREAS para la seccion de Servicios del Index*/
+/* Desktop */
+.gridAreas{
+	display: grid;
+	grid-template-areas:
+	"titulo titulo titulo"
+	"serv1 serv2 serv3"
+	;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 100px ;
+	grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+/*Nombro las areas*/
+.tituloServicio {
+    grid-area: titulo;
+}
+.gridServ1{
+	grid-area: serv1;
+}
+.gridServ2{
+	grid-area: serv2;
+}
+.gridServ3{
+	grid-area: serv3;
+}
+
+/* .border {
+    border: solid 1px black;
+} */
+/* Desktop */
+@media (min-width: 1025px){
+	.altoImagen{
+		height: 780px;
+	}
+	
+}
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1024px){
+	.altoImagen{
+		height: 780px;
+	}
+	body {
+        background-color: pink;
+    }
+    .gridAreas{
+        display: grid;
+        grid-template-areas: 
+		"titulo"
+		"serv1"
+		"serv2"
+		"serv3"
+        ;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(4,100px);
+    }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+	body {
+        background-color: yellow;
+    }
+	.gridAreas{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+		"serv1"
+		"serv2"
+		"serv3"
+        ;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(4,100px);
+    }
+  }
+
+  /* Desktop */
+  @media only screen and (min-width: 1024px) {
+	body {
+        background-color: blue;
+    }
+  }
+
+
+
+/* DESAFIO 8 */
+/* Degradado al Header */
+.degradadoHeader {
+	background-image: linear-gradient(314deg, #4ecdc4 30%, #1A535C 90%);
+}
+
+/* Animacion Titulo Header*/
+.animacion {
+	animation-name: titulo;
+    animation-duration: 2s;
+}
+@keyframes titulo {
+    from/* 0% */ {
+        opacity: 0;
+        transform: translate(-300px);
+    }
+    to /* 100%*/{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Transición elementos del menu */
+.transicion:hover {
+	transition: 1s;
+	font-size: 2rem;
+  }
+
+/* FORM DE CONTACTO */
+.divContacto{
+	background-color: #FEEA76;
+    margin: 20px 400px;
+    border: solid 1px black;
+	padding: 50px 50px;	
+}
